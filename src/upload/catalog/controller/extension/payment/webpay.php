@@ -106,6 +106,7 @@ class ControllerExtensionPaymentWebpay extends Controller {
             return;
         }
 
+        $itemsId = array();
         foreach ($this->cart->getProducts() as $product) {
             $itemsId[] = $product['product_id'];
         }
